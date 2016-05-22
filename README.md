@@ -1,11 +1,8 @@
-NoisyGen noise generator
-===
-
 What
 ---
 A simple low pass filter that runs on the command line.
 
-Takes white noise from /dev/urandom, processes it with a low pass filter and outputs a byte stream for playing with aplay.
+Takes an input stream of random bytes and outputs a filtered stream via command line redirection.
 
 Why
 ---
@@ -13,7 +10,7 @@ I use this noise generator when I need to concentrate in a noisy environment. Ch
 
 How
 ---
-A 'forgetful integrator' filter is implemented by adding the next sample to the previous filter state multiplied by a 'memory' factor. This gives a geometric sequence impulse response with the response dictated by the 'memory' parameter.
+Single pole filters are chained in series.
 
 By tweaking the **Response** and **Poles** variables in the NoisyGen.sh script you can vary the quality of the noise from thunderous waterfall to harsh white hiss.
 
@@ -29,4 +26,4 @@ Currently a very primitive script compiles the few existing files. To be extende
 
 Running
 ---
-The script NoisyGen.sh runs the noise generator by passing in white noise from /dev/urandom and outputting the filtered signal to aplay in stereo. On Windows these will beed to be substituded with appropriate white noise generation and sound playback programs.
+The script NoisyGen.sh runs the noise generator by passing in white noise from /dev/urandom and outputting the filtered signal to aplay in stereo. On Windows these will need to be substituded with appropriate white noise generation and sound playback programs.
