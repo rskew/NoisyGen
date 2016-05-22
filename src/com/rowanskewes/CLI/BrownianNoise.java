@@ -7,20 +7,18 @@ import java.util.*;
 import java.io.*;
 
 /**
- * Command line low pass filter, creates 16 bit noise of variable frequency profile
+ * Command line low pass filter, creates noise of variable frequency profile
  * when white noise is input.
  *
  * Applications include sound masking for concentrating in noisy environments.
  *
- * To use, grab random data from /dev/urandom and pipe output to aplay like so:
- *     java -cp bin com.rowanskewes.CLI.BrownianNoise 0.95 3 < /dev/urandom | aplay -f cd
  * @author Rowan Skewes <rowan.skewes@gmail.com>
  * @version 1.0
  */
 
 public class BrownianNoise {
 
-	// Terminal width (for printing output stream; static)
+	// Terminal width (for printing output stream; static window size for now)
 	private final static int WIDTH = 220;
 
 	// Maximum signal level
@@ -35,6 +33,7 @@ public class BrownianNoise {
 
 	public static void main(String[] args){
 
+		// Initialize data streams
 		DataInputStream inStream = new DataInputStream(System.in);
 		PrintStream outStream =  new PrintStream(System.out);
 

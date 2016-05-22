@@ -2,12 +2,12 @@ package com.rowanskewes.filters;
 
 import java.lang.Math;
 
+/**
+ * Simple low pass forgetful integrator
+ * with geometric impulse response ie single pole.
+ * @author Rowan Skewes <rowan.skewes@gmail.com>
+ */
 public class Lpf implements Filter {
-	/* Rowan Skewes
-	 * Low Pass Filter object for Command Line Filter.class
-	 * Simple low pass forgetful integrator,
-	 * Geometric impulse response
-	 */
 
 	// Memory of filter
 	private float state;
