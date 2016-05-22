@@ -4,7 +4,6 @@ import java.lang.Math;
 
 /**
  * Simple low pass forgetful integrator
- * with geometric impulse response ie single pole.
  * @author Rowan Skewes <rowan.skewes@gmail.com>
  */
 public class Lpf implements Filter {
