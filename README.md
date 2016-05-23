@@ -26,4 +26,4 @@ Currently a very primitive script compiles the few source files. To be extended 
 
 Running
 ---
-The script NoisyGen.sh runs the noise generator by passing in white noise from /dev/urandom and outputting the filtered signal to aplay in stereo. On Windows these will need to be substituded with appropriate white noise generation and sound playback programs.
+The script NoisyGen.sh runs the noise generator by passing in white noise from /dev/urandom and outputting the filtered signal to aplay in stereo. On Windows/Mac these will need to be substituded with appropriate white noise generation and sound playback programs.
