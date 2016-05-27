@@ -11,8 +11,8 @@ public class Lpf implements Filter {
 	// Memory of filter
 	private float state;
 
-	// Filter response ('forgetfulness')
-	// High values <-> less forgetfulness, lower cutoff, more filtering
+	// Filter response ('memory')
+	// High values <-> longer memory <-> larger averaging window <-> lower cutoff
 	private final float response;
 
 	// Constant to normalise volume for different cutoffs
