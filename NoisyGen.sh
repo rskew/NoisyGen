@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/env sh
 
 # My current fav parameters, these give a pleasant thunderous waterfall sound
 RESPONSE=0.95

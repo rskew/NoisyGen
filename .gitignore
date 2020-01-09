@@ -1,3 +1,5 @@
+bin
+
 #ignore swap files
 .swp
 .class
